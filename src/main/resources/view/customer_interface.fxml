@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="677.0" prefWidth="852.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerInterfaceController">
+   <children>
+      <Label layoutY="-2.0" prefHeight="86.0" prefWidth="852.0" style="-fx-background-color: #6cd454;" text="                             Customer Form" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustId" layoutX="195.0" layoutY="131.0" prefHeight="30.0" prefWidth="170.0" promptText="Customer ID" style="-fx-background-color: #B8FFB8;">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtTitle" layoutX="413.0" layoutY="133.0" prefHeight="30.0" prefWidth="170.0" promptText="Title" style="-fx-background-color: #B8FFB8;">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="630.0" layoutY="133.0" prefHeight="30.0" prefWidth="170.0" promptText="Name" style="-fx-background-color: #B8FFB8;">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtDob" layoutX="195.0" layoutY="194.0" prefHeight="30.0" prefWidth="170.0" promptText="Date Of Birth" style="-fx-background-color: #B8FFB8;">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtSalary" layoutX="413.0" layoutY="196.0" prefHeight="30.0" prefWidth="170.0" promptText="Salary" style="-fx-background-color: #B8FFB8;">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="630.0" layoutY="196.0" prefHeight="30.0" prefWidth="170.0" promptText="Address" style="-fx-background-color: #B8FFB8;">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCity" layoutX="194.0" layoutY="254.0" prefHeight="30.0" prefWidth="170.0" promptText="City" style="-fx-background-color: #B8FFB8;">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtProvince" layoutX="412.0" layoutY="256.0" prefHeight="30.0" prefWidth="170.0" promptText="Province" style="-fx-background-color: #B8FFB8;">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtPostalCode" layoutX="629.0" layoutY="256.0" prefHeight="30.0" prefWidth="170.0" promptText="Postal Code" style="-fx-background-color: #B8FFB8;">
+         <font>
+            <Font size="13.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnAdd" layoutX="182.0" layoutY="602.0" onAction="#btnAddOnAction" prefHeight="41.0" prefWidth="77.0" style="-fx-background-color: #04AA6D; -fx-background-radius: 20;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="284.0" layoutY="602.0" onAction="#btnUpdateOnAction" prefHeight="41.0" prefWidth="77.0" style="-fx-background-color: #FFAE42; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="384.0" layoutY="604.0" onAction="#btnDeleteOnAction" prefHeight="41.0" prefWidth="77.0" style="-fx-background-color: #f44336; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnSearch" layoutX="63.0" layoutY="132.0" onAction="#btnSearchOnAction" prefHeight="41.0" prefWidth="77.0" style="-fx-background-color: #008CBA; -fx-background-radius: 20;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnLoad" layoutX="723.0" layoutY="603.0" onAction="#btnLoadOnAction" prefHeight="41.0" prefWidth="77.0" style="-fx-background-color: #555555; -fx-background-radius: 20;" text="Load" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <TableView fx:id="tblCustomer" layoutX="51.0" layoutY="329.0" prefHeight="242.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="colCustId" prefWidth="84.80001068115234" text="Customer ID" />
+          <TableColumn fx:id="colTitle" prefWidth="61.60003662109375" text="Title" />
+            <TableColumn fx:id="colName" prefWidth="68.0" text="Name" />
+            <TableColumn fx:id="colDob" prefWidth="99.20001220703125" text="Date of birth" />
+            <TableColumn fx:id="colSalary" prefWidth="79.20001220703125" text="Salary" />
+            <TableColumn fx:id="colAddress" prefWidth="99.20004272460938" text="Address" />
+            <TableColumn fx:id="colCity" prefWidth="75.199951171875" text="City" />
+            <TableColumn fx:id="colProvince" prefWidth="84.00006103515625" text="Province" />
+            <TableColumn fx:id="colPostalCode" prefWidth="93.59995117187498" text="Postal Code" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="74.0" fitWidth="78.0" layoutX="239.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../user%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
